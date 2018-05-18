@@ -1,0 +1,1 @@
+Hobbits:Bilbo;Dwarfs:Thorin,Fili,Kili,Balin;Wizards:Gandalf;Dwarfs:Dwalin,Oin,Gloin;Elves:Elrond;Dwarfs:Dori,Nori;Trolls:Tom,Bert;Dwarfs:Ori,Bifur,Bofur,Bombur;Wizards:Radagast;Trolls:William

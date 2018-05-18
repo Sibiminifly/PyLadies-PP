@@ -1,0 +1,97 @@
+P=x2
+Pole kwadratu
+Algorytm / schemat blokowy, który oblicza pole kwadratu
+
+Cechy
+- sprawdza czy wprowadzona liczba jest doddatnia
+- pyta u¿ytkownika czy zacz¹æ od nowa po obliczeniu
+
+START
+X=
+Czy x>0
+
+Je¿eli nie
+To podaj dodatni¹ wartoœæ
+
+Jeœli tak to wróæ start
+Jeœli Tak to licz
+Spytaj czy chce policzyæ od nowa --> START
+Jeœli nie chce liczyæ od nowa --> STOP
+
+Programy:
+Ipython
+Jupyter notebook (do stron internetowych)
+
+SteckOverflow
+- sobrze zdefiniowane pytania
+- korzystaj z wyszukiwarki
+GitHub
+- wyszukiwanie kodu
+- projekty Pythonowe
+Poradniki
+Grupa PyLadies Poznañ
+
+OPERACJE
+Dodawanie 2 + 3
+Odejmowanie 3 - 1
+Mno¿enie 2*2
+Dzielneie 2 / 3
+Reszta z dzielenia 2 5 3
+Potêga 2 ** 3
+Dzielnie bez reszty 3 // 2
+Nawiasy 2 / (2 + 3)
+
+POJÊCIE ZMIENNEJ
+- nazwa / identyfikator
+- adres w pamiêci
+- wartoœæ
+- typ
+
+Typy zmiennych:
+-ca³kowita = 2
+-rzeczywiste = 3.7
+-znakowe = "Ala ma kota"
+-logiczne = True
+-tablicowe = [2,3,4,5]
+-s³ownikowa = {"Ala":23, "Kot":7} ((przechowujemy wiek Ali i Kota)
+-tupla = (2z,3,4)
+
+>>>wynik = 2+2.5
+>>>wynik
+4.5
+>>>wynik + wynik
+9.0
+>>>wynik*wynik
+20.25
+
+>>>wynik + "jest dobre"
+'4.5 jest dobre'
+
+
+>>>a=[2,4,6,8]
+>>>a[1] ((numerujemy od zera, wiêc jak chcemy 3ci elemt to wpisujemy 2))
+
+
+KeyboardInterrup
+a.
+
+>>> slownik = {"ala":22, "kot" :7, "tomek"=14}
+>>> slownik['ala']
+22
+
+Pole powierzchni prostok¹ta x i y
+>>> x = 3
+>>>x
+3
+>>> y = 3
+>>>y
+3
+>>>ppow=x*y
+>>>ppow
+9
+>>>ppow = x*y
+9
+
+
+
+

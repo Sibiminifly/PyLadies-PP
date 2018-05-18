@@ -1,0 +1,39 @@
+koniunkcja
+p  q  p and q
+1  1     1
+1  0     0
+0  1   0
+0  0  0
+
+p and q and r
+1 1 1
+1
+1
+
+p  q  p or q
+1  1  1
+1  0  1
+0  1  1
+0  0  0
+
+x = 7
+
+
+lower() - zmiana du¿ych liter na ma³e
+upper() - zmiana ma³ych liter na du¿e
+
+liczby={5,2,5,3,6]
+aby posortowaæ "sort"
+liczby.sort()
+liczby
+[2,3,5,5,6]
+liczby.revers() - obraca liczby; odwrotny szyk
+"Ala ma kota".lower()
+'ala ma kota'
+"ala ma kota".capitalize() - ka¿d¹ 1-sz¹ literê zamienia na du¿¹.
+"ala ma kota".title()
+'Ala Ma Kota'
+
+
+PyLadies.info
+goo.gl/GLiX1V

@@ -1,0 +1,10 @@
+{
+  "name": "John Smith",
+  "occupation": "Software Engineer",
+  "age": 30,
+  "city": "London",
+  "cars": [
+    "Ford",
+    "BMW"
+  ]
+}

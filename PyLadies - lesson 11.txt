@@ -1,0 +1,33 @@
+Struktura HTML
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Tytu³ strony<title>
+	<head>
+	<body>
+	<header><header> --->nawigacja logo butto od facebooka
+	<div> --->boxy, bloki, z obrazkami, tekstami
+		<p>Keep calm<p> -->paragraf
+<span> kawa³ek tekstu, któremu chcemy nadaæ inny wygl¹d
+<strong> pogrubiony tekst
+<h1> - rozdzia³y, podrzdzia³y
+<li> lista
+<table> tabele
+<lr> - rzêdy
+img --obrazki --> nie ma tagu zamykaj¹cego
+src --œcie¿ka do naszego pliku z obrazkiem, zagnie¿d¿a obiekt
+alt --wpisujemy jak nam siê obrazek nie wyœwietli
+htrf --adres naszego linku (okreœla relacjê)-->przenosi nasz na stronê
+form -- formularz
+lable --> etykieta np imiê
+textarea
+
+id - nie mo¿e powtórzyæ siê na stronie, jeden element mo¿e mieæ jedno id
+klasa - wielkorotnego u¿ytku, stosowana do stylowania, jeden element mo¿e mieæ kilka klas
+
+Zadanie
+https://tinyurl.com?pyladies-HTML
+https://Tinyurl.com/py-html
+
+
+--------------------------------------------------------

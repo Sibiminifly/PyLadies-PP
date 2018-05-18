@@ -1,0 +1,157 @@
+imie=input("Jak masz na imiê?")
+print(imie)
+
+Jak zaparzyæ herbatê - instrukcje warunkowe
+Do dyspozycji:
+-czajnik na gaz
+-gaz
+-woda
+-herbata
+Przygotowaæ algorytm parzenia herbaty
+
+if warunek:
+   instrukcja(0
+
+If warunek:
+   instrukcja()
+else:
+   instrukcja()
+
+
+If warunek:
+   instrukcja()
+elif:
+   instrukcja()
+else:
+   instrukcja()
+
+
+
+
+Napisz program, który zapyta u¿ytkownika o jego imiê, nastêpnie wypisze na ekranie
+- Je¿eli imiê to
+ "Miko³aj" niech program wypisze *Miko³aj*
+- W przeciwnym wypadku niech napisze "Nie ka¿dy jest Miko³ajem"
+
+>>>imie
+'Wojtek'
+>>>print('*'+imie+'*')
+*Wojtek
+
+imie=input("Jak masz na imiê?")
+print(imie)
+if imie=="Mikolaj":
+    print("*"+imie+"*")
+else:
+    print("Nie ka¿dy jest Miko³ajem")
+
+
+imie=input("Jak masz na imiê?")
+print(imie)
+if imie=="Mikolaj":
+    print("*"+imie+"*")
+elif imie=="Wojtek":
+    print("+"+imie+"+")
+else:
+    print("Nie ka¿dy jest Miko³ajem")
+-----------------------------------------------------------------------------------------------
+
+Algorytm, który pomo¿e skrzatom parzyæ herbatê w prawid³owy sposób
+- Wczytaj dane do u¿ytkownika #TIP-input
+
+Schemat postêpowania:
+-Czy woda jest w czajniku?
+	-NIE: "Najelj wody"
+	-TAK:Wspaniale, woda w czajniku"
+- Czy gaz jest w³¹czony?
+	-NIE: "W³¹cz gaz"
+	-TAK: "Wspaniale, gaz w³aczony"
+- ***
+- Czy czajnik stoi na gazie?
+	-NIE: "Postaw czajnik na gazie"
+	-TAK: "Czy czajnik gwi¿d¿e?"
+		-NIE: "Czekaj z uœmiechem"
+		-TAK: "Wy³¹cz gaz"
+--------------------------
+
+woda=input("Czy woda jest w czajniku? tak/nie\n")
+gaz=input("Czy gaz jest w³¹czony? tak/nie\n")
+czajnik=input("Czy czajnik stoi na gazie? tak/nie\n")
+
+if woda=="tak":
+    print("Wspaniale, woda w czajniku")
+else:
+    print("Nalej wody")
+
+if gaz=="tak":
+    print("Wspaniale, gaz w³¹czony")
+else:
+    print("W³¹cz gaz")
+
+if czajnik=="nie":
+    print("Postaw czajnik na gazie")
+elif czajnik=="tak":
+    gwizdze=input("Czy czajnik gwi¿d¿e? tak/nie\n")
+    if gwizdze=="tak":
+        print("Wy³¹cz gaz")
+    elif gwizdze=="nie":
+        print("Czekaj z uœmiechem")
+    else:
+        print("Napisz tak lub nie")
+else:
+    print("Napisz tak lub nie")
+input()
+
+---------------------------------------------------------------------------------------
+Program, który wczyta jak¹œ liczbê
+a=55
+warunki:
+1)a>50
+2)a==55
+if a>50
+	print("a>50")
+if a==55
+	print("a==55")
+
+"jeœli zamiast if a==55 damy elif a==55 (w przeciwnym przypdaku) - jak spe³ni³o siê if to ju¿ nie sprawdza elif."
+
+------------------------------------------------------------------------
+Pogrupowaæ prezenty w zale¿noœci od objetoœci i kszta³tu.
+Prezenty maj¹ kszta³t prostopad³oœcianu lub szeœcianu
+Zaimpletuj program, który:
+- wczyta od u¿ytkownika d³ugoœci boków bry³y (3 zmienne)
+- oblicz objêtoœæ
+- sprawdŸ czy prostopad³oœcian jest szeœcianem i poinformuj o tym u¿ytkownika
+- wypisze objêtoœæ i kszta³t bry³y
+- ****
+- policzy pole powierzchni i wypisze komunikat je¿eli pole > 100
+
+#to jest typ zmiennej liczba zmiennoprzecinkowa, nie musi byæ zmienn¹ ca³kowit¹ float
+
+
+a = float(input("Podaj d³ugoœæ boku a\n"))
+b = float(input("Podaj d³ugoœæ boku b.\n"))
+c = float(input("Podaj d³ugoœæ boku c.\n"))
+objetosc = a*b*c
+if a==b and b==c:
+    print("Objêtoœæ wynosi:", objetosc, "jest to szeœcian")
+else:
+    print("Objêtoœæ wynosi:", objetosc, "jest to prostopad³oœcian")
+
+----------------------
+a = float(input("Podaj d³ugoœæ boku a\n"))
+b = float(input("Podaj d³ugoœæ boku b.\n"))
+c = float(input("Podaj d³ugoœæ boku c.\n"))
+objetosc = a*b*c
+if a==b and b==c:
+    print("Objêtoœæ wynosi:", objetosc, "jest to szeœcian")
+else:
+    print("Objêtoœæ wynosi:", objetosc, "jest to prostopad³oœcian")
+pp = 2*a*b + 2*a*c + 2*b*c
+if pp>100:
+    print("pole powierzchni wiêksze od 100", "pole powerzchni wynosi",pp)
+else:
+    print("pole powerzchni wynosi",pp)
+
+
+

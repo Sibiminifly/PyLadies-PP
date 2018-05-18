@@ -1,0 +1,180 @@
+pusta_lista =[]
+Lista_liczb = [34, 45.5, 67, 0, -30, 40+5]
+lista_stringow = ["jablko", "banan", "gruszka"]
+lista_list = [[34, 45, 78.8], [67, 78.9],[0, -70.8]]
+lista_zmiennych = [lista_liczb, lista_stringow, lista_list]
+lista_mix = ["python", [56, 78, "mysz", lista_liczb, "pizza"]
+
+Zmienne i ich typy
+lista_stron = [23, 5, 43, 0 ,0, 5, 0, 32, 67]
+Ile stron przeczyta³a 5 dnia?
+lista [pozycja_elementu_którego_szukam]
+np. lista[8]
+dzien_5 = lista_stron[4]
+print(dzien_5)
+>>> 0
+-----------------------------------------------------------
+Ostatni element na liœcie to jest {-1]
+dzien_ostatni = lista stron[-1]
+print(ostatni_dzien)
+
+-----------------------------------------------------------
+
+
+
+Ile jest elementów na liœcie?
+Funkcja len()
+np. len(lista)
+len(lista_stron)
+>>>9
+
+dzien_ostani = lista_stron[8]
+print (dzien_ostatni)
+>>>67
+
+-------------------------------------------------------------
+Skróæmy to!
+dzien_ostatni = lista_stron[len(lista_stron) - 1] --->>liczba elementów naszych stron -1
+print(dzien_ostatni)
+>>>67
+
+------------------------------------------------------------------
+Jak wygl¹da³o moje czytelnictwo w ci¹gu pierwszych trzech dni?
+lista[3:] - pozycje od czwartej do ostatniej
+lista[2:4] - pozycje od trzeciej do czwartej
+lista[:3] - pozycje od pierwszej do trzeciej
+
+pierwsze_3_dni = lista_stron[:3]
+print(pierwsze_3_dni)
+>>>[23, 5, 43]
+
+-------------------------------------------------------------------
+
+tinyurl.com/pyladies-sciaga
+
+1. Stwórz zmienn¹ o nazwie filmy
+2. Przypisz do niej listê zawieraj¹cych tytu³ów przyk³adowych filmów (min.8)
+3. Wypisz pierwszy film na liœcie
+4. Wypisz 7 film na liœcie
+5. Wypisz ostatni film na liœcie
+6. Wypisz pierwsze cztery filmy na liœcie
+7. Wypisz cztery ostatnie filmy na liœcie
+8. Wypisz filmy na pozycjach od 4 do 7
+
+lista_filmow = ["Malpa", "Kon", "Zaba", "Mysza", "Ogien", "Pies", "Kot", "Woda"]
+Pierwszy_dzien = lista_filmow[0]
+print(Pierwszy_dzien)
+siodmy_dzien = lista_filmow[6]
+print(siodmy_dzien)
+ostatni_dzien = lista_filmow[len(lista_filmow)-1]
+print(ostatni_dzien)
+pierwsze_4_dni = lista_filmow[:4]
+print(pierwsze_4_dni)
+ostatnie_4_dni = lista_filmow[4:]
+#3[-4:]
+print(ostatnie_4_dni)
+na_pozycjach_4do7 = lista_filmow[3:7]
+print(na_pozycjach_4do7)
+
+--------------------------------------------
+Zadanie dodatkowe - treœæ w slajdzie
+Stwórz zmienn¹ film_5
+film_5 = film[4]
+litera_3 = film_5[2]
+litery_3_ostatnie = filmy_5[-3:]
+liczba_znakow = len(film_5)
+-----------------------------------------------
+
+moi_znajomi =["Maciek Nowak", "Ania Kowalska"]
+
+Jak sprawdziæ czy Ania jest wœród moich znajomych?
+print("Ania Kowalska" in moi_znajomi)
+....True
+
+Jak sprawdziæ czy Grzegorz jest wœród moich znajomych?
+print("Grzegorz Strzelczyk" in moi_znajomi)
+>>>False
+
+Dodajemy do moich znajomych Grzegorza Strzelczyka
+moi_znajomi.append("Grzegorz Strzelczyk")
+print(moi_znajomi)
+>>>["Maciek Nowak", "Ania Kowalska", "Grzegorz Strzelczyk"]
+
+## " " dla ci¹gu znaków
+## ' ' dla zmiennych
+
+------------------------------------------------------------------------------
+
+USUWANIE
+Usuwam Ania Kowalska
+
+del lista[pozycja elementu] - gdy znamy pozycjê elementu, który chcemy usun¹æ
+
+del moi_znajomi[1]
+print(moi_znajomi)
+>>>["Maciek Nowak", "Grzegorz Strzelczyk"]
+
+
+
+lista.remove(usuwany_element) - gdy znamy wartoœc elementu, a nie pozycjê
+
+moi_znajomi.remove('Ania Nowak')
+print(moi_znajomi)
+>>>["Maciek Nowak", "Grzegorz Strzelczyk"]
+
+----------------------------------------------------
+ZnajdŸ nowych znajomych
+nowy_znajomy = input("mój nowy znajomy nazywa siê ")
+moi_znajomi.append(nowy_znajomy)
+print(moi_znajomi)
+
+----------------------
+moi_znajomi =[.........]
+
+ZnajdŸ nowych znajomych!!
+nowy_znajomy_1 = input("Moj nowy znajomy nazywa siê...")
+nowy_znajomy_2 = input("Moj nowy znajomy nazywa siê...")
+nowy_znajomy_3 = input("Moj nowy znajomy nazywa siê...")
+nowy_znajomy_4 = input("Moj nowy znajomy nazywa siê...")
+nowy_znajomy_5 = input("Moj nowy znajomy nazywa siê...")
+
+moi_znajomi.append(nowy_znajomy_1)
+moi_znajomi.append(nowy_znajomy_2)
+moi_znajomi.append(nowy_znajomy_3)
+moi_znajomi.append(nowy_znajomy_4)
+moi_znajomi.append(nowy_znajomy_5)
+print(moi_znajomi)
+
+-------------Jak to skróciæ
+nowy_znajomy_1 = input("Moj nowy znajomy nazywa siê...")
+nowy_znajomy_2 = input("Moj nowy znajomy nazywa siê...")
+nowy_znajomy_3 = input("Moj nowy znajomy nazywa siê...")
+nowy_znajomy_4 = input("Moj nowy znajomy nazywa siê...")
+nowy_znajomy_5 = input("Moj nowy znajomy nazywa siê...")
+moi_znajomi.append([nowy_znajomy_1, nowy_znajomy_2, nowy_znajomy_3, nowy_znajomy_4, nowy_znajomy_5])
+print(moi_znajomi)
+
+append --->> mo¿e przyj¹æ tylko jedn¹ zmienn¹
+
+Aby po³¹czyæ listy
+Metoda extend()
+moi_znajomi.extend([nowy_znajomy_1, nowy_znajomy_2, nowy_znajomy_3, nowy_znajomy_4, nowy_znajomy_5])
+print(moi_znajomi)
+
+-------------------------------------------------
+ZADANIA
+1 SprawdŸ, czy na liœcie filmów jest tytu³ "Renifer Niko ratuje Œwiêta"
+2. Jeœli go nie ma dodaj do listy firlmów
+3. Usuñ z listy filmów 5 pozycjê
+4. SprawdŸ jaki folm ma teraz 5 pozycjê na Twojej liœcie
+5, Wykorzystuj¹c funkcjê input() oraz if... else i pozwól u¿ytkownikowi dodawaæ nowe tytu³y o ile nie ma ich ju¿ na liœcie filmów.
+Jeœli film jest ju¿ na liœcie poinfomuj o tym u¿ytkownika
+6 Wykorzystuj¹c powy¿sz¹ funkcjê dodajdo swojej listy nastepuj¹ce tytuly: "Casablanca", "Ojciec Chrzestny", "Mary Poppins", "Dwunastu Gniewsnych Ludzi", "Renifer Niko ratuje Œwiêta", "Thor: Ragnarok"
+
+filmy = ["Malpa", "Kon", "Zaba", "Mysza", "Ogien", "Pies", "Kot", "Woda"]
+nowy_film = input("SprawdŸ czy na mojej liœcie jest film...\n")
+if nowy_film in filmy:
+    print("Ten film jest na liœcie")
+else:
+    filmy.append(nowy_film)
+print(filmy)

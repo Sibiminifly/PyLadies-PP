@@ -1,0 +1,11 @@
+﻿Bilbo,Bungo,Bag End,50,5
+Balin,Fundin,Erebor,178,9.5
+Dwalin,Fundin,-,169,9.5
+Óin,Gróin,-,167,8
+Glóin,Gróin,-,158,8
+Dori,-,-,114,7.4
+Nori,-,-,104,7.4
+Ori,-,-,76,7.2
+Bifur,-,-,127,8.5
+Bofur,-,-,98,8.4
+Bombur,-,-,107,8.3

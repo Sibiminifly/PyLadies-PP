@@ -1,0 +1,15 @@
+Modu³
+importsyntax
+import module
+from module import function
+
+dzia³amy na module statistix, który jest w picharm
+
+Pip to narzêdzie pozwalaj¹ce instalowaæ modu³y z sieci
+modu³ do wizuzalizacji danych, tworzenia wykresów itp
+cmd uruchamiamy jako administrator
+C:\Windows\system32\pip install matplotlib
+
+dane bêd¹ na github
+
+tablica ascci - przedstawia odpowiednik liczbowy dla ka¿dego znaku

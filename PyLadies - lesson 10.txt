@@ -1,0 +1,183 @@
+Kamil Pazik
+--------------------------------------------------
+S³ownik
+- Pary klucz: wartoœæ
+studenci: {
+'Alicja':{'wiek':21, 'kierunek':'informatyka'}'
+'Kasia'
+'Tomek':{'wiek':25, 'ocena':2}
+ -------------------------------------------------------
+Funkcje
+- funkcja mo¿e nie zwracaæ wartoœci
+def licz_pole_prostoka(a,b):
+	return a*b
+
+prostokat1 = licz_pole_prostokata(2,3)
+print(prostokat1)
+#6
+-----------------------
+def rysuj_prostokat(a,b, element):
+	wiersz=a*element
+	for i in range(b):
+	print(wiersz)  --> ten print zwraca wiersz
+
+wynik = rysuj_prostokat(7,4, "*")
+print(wynik)  ---> ten print nic nie zwraca
+
+*******
+*******
+*******
+*******
+--------------------
+def licz_srednia_zarobkow(*args):   -->args to lista parametrów
+	suma = 0
+	for kwota in args:
+		suma+= kwota
+	return suma/len (args)
+----------------
+
+-----------------
+Urachamianie Debuggeer
+-Zaznaczamy miejsce w kodzie gdzie chcemy siê zatrzymaæ (postawiæ Breakpointa)
+-urachamiamy Debugger
+- U¿ywamy step into i step over
+
+Zadanie1
+- SprawdŸ dzia³anie licz_srednia_zarobkow przy uzycia debuggera - przypadku braku argumentów dla tej funkcji
+- popraw kod
+- *stwórz funkcjê licz¹c¹ medianê zarobków
+
+def licz_srednia_zarobkow(*args):
+    suma = 0
+    for kwota in args:
+        suma += kwota
+    return suma / len (args)
+
+print(licz_srednia_zarobkow(1200,3000,4500,2000))
+print(licz_srednia_zarobkow(1200,3000,4500,2000,10000))
+#print(licz_srednia_zarobkow()) ??
+
+---------------------------------------------------------------
+KISS & DRY
+KISS --> Keep it simple stupid! (nie komplikuj, g³uptasku)
+DRY --> Don't repeat yourself
+---------------------------------------------------------------
+
+** KWARGS (zamiast listy u¿ywamy s³owników)
+studenci= {
+'Alicja':{'wiek':21, 'kierunek':'informatyka', 'ocena':4},
+'Kasia':{'wiek':23, 'kierunek':'ekonomia', 'ocena':4},
+'Gosia':{'wiek':23, 'kierunek':'ifinanse', 'ocena':3},
+'Tomek':{'wiek':25,'ocena':2},
+}
+
+def pokaz_wszystkie(**kwargs):
+	for klucz, wartosc in kwargs.items():
+		print(klucz, wartosc)
+
+pokaz_wszystkie(**studenci)
+
+--------------------------------------------------------------
+Róznica args i kwargs
+*args - zachowuje siê jak lista w œrodku (w liœcie by³y tylko elementy, wartoœci) tu nie ma item, value, tu s¹ konkretne dane.
+**kwargs - zachowuje siê jak s³ownik (w s³owniku mamy parê:klucz, wartoœæ); jest items, values i keys
+
+----------------------
+jak wyci¹gn¹æ same klucze
+
+studenci= {
+'Alicja':{'wiek':21, 'kierunek':'informatyka', 'ocena':4},
+'Kasia':{'wiek':23, 'kierunek':'ekonomia', 'ocena':4},
+'Gosia':{'wiek':23, 'kierunek':'ifinanse', 'ocena':3},
+'Tomek':{'wiek':25,'ocena':2},
+}
+
+def pokaz_wszystkie(**kwargs):
+	for klucz in kwargs.keys(): ##-->da nam listê kluczy a values da nam ca³¹ resztê; items jest po³aczeniem value i keys_>kwargs.items()
+		print(klucz)
+
+pokaz_wszystkie(**studenci)
+
+
+print(len(studenci.items())) - daje nam 4
+
+------------------------------------------
+jak posortujesz s³ownik po wartoœciach
+slownik = {
+	'element_pierwszy' = 10,
+	'element_drugi' = 3,
+	'element_trzeci' = 7,
+}
+print(slownik)
+--?nie zrobione; temat na póŸniej????????
+
+-----------------------------------------
+
+studenci= {
+'Alicja':{'wiek':21, 'kierunek':'informatyka', 'ocena':4},
+'Kasia':{'wiek':23, 'kierunek':'ekonomia', 'ocena':4},
+'Gosia':{'wiek':23, 'kierunek':'ifinanse', 'ocena':3},
+'Tomek':{'wiek':25,'ocena':2},
+}
+
+def pokaz_wszystkie(studenci):
+	for klucz, wartosc in studenci.items():
+		print(klucz, wartosc)
+
+pokaz_wszystkie(studenci)
+
+----------------------------------------------------------------
+Zadanie2
+
+studenci= {
+'Alicja':{'wiek':21, 'kierunek':'informatyka', 'ocena':4},
+'Kasia':{'wiek':23, 'kierunek':'ekonomia', 'ocena':4},
+'Gosia':{'wiek':23, 'kierunek':'ifinanse', 'ocena':3},
+'Tomek':{'wiek':25,'ocena':2},
+}
+
+Stwórz funkcjê tworz¹c¹ raport pokzuj¹cy
+- œredni¹ ocen
+- najgorsza ocena
+- student bez przypisanego kierunku
+-*medianê ocen
+
+def licz_mediane_ocen(**kwargs):   -->mwdiana to wartoœæ œrodkowa
+	if not kwargs:
+		return None
+	oceny = [element['ocena'] for elements in kwargs.values()]
+	return licz_mediane(*oceny)
+
+
+def licz_mediane(*args):
+	posortowane = sorted(args)
+	ilosc_ocen = len(posortowane)
+	mediana = None
+	if ilosc_oceb %2:  -->prawdza czy liczba parzysta
+		polowa = ilosc_ocen//2
+		mediana = posortowane[polowa]
+	else:
+		polowa = len(posortowane)//2
+		mediana = (posortowane[polowa] + posortowane [polowa-1])/2
+	return mediana
+
+def licz_mediane_ocen(**kwargs):   -->mwdiana to wartoœæ œrodkowa
+	if not kwargs:
+		return None
+	oceny = []
+	for elements in kwargs.values():
+		oceny.append(element['ocena'])
+	return licz_mediane(*oceny)
+	####oceny = [element['ocena'] for elements in kwargs.values()]
+
+def licz_srednia_ocen(**kwargs):
+	suma = 0
+	for element in kwargs.values():
+		suma
+
+def raport_studentow(**kwargs):
+	print("studenci bez kierunku: "+str(studenci_bez_kierunku(**kwargs)))
+
+-u¿yj mocy DRY
+def raport_studentow(**kwargs):
+	print("studenci bez kierunku: "+str(studenci_bez_kierunku(**kwargs)))

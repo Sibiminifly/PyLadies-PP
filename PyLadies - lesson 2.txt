@@ -1,0 +1,46 @@
+Nazwy zmiennych piszemy z ma³ych liter
+True i False piszemy z du¿ej litery
+
+input() - w nawiasach wiadomoœæ, która ma siê wyœwietliæ u¿ytkownikowi
+input("Ile masz lat")
+
+print ("hello world")
+input ("Nacisnij ANY KEY by zakonczyc")
+
+print("Masz na imiê "+input("Jak masz na imiê?"))
+
+>>>wynik = input()
+2
+>>>wynik
+'2'
+
+osoba=input("Jak masz na imiê? ")
+wiek=input("Ile masz lat? ")
+print("Masz na imiê ",osoba," i masz ",wiek," lat.")
+
+NOTATKI
+na pocz¹tku komentarza #
+# TODO
+# FIXME
+jak d³u¿szy komentarz """ duuuuuu¿¿¿¿¿¿zo tekstu"""
+>>>"""
+...tekst
+...tekst
+"""
+
+imie = input("Podaj imie: ")
+print(imie)
+input()
+
+print ("Czeœæ!!!")
+osoba=input("Jak masz na imiê? ")
+wiek=input("Ile masz lat? ")
+print ("Czeœæ!!!")
+print("Masz na imiê ",osoba," i masz ",wiek," lat.")
+
+
+imie = input("Podaj imie: ")
+print(imie)
+input() #wstawiamy aby nam siê nie zamknê³a konsola
+
+# TODO

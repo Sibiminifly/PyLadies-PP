@@ -1,0 +1,81 @@
+Pythone
+DWA TRYBY:
+1. tryb interaktywny - na bie¿¹co ewaluuje to co wpisujemy
+python
+exit()
+
+2. tryb skryptowy - poprzez wskazanie skryptu
+python C:\Users\Janusz\Deteskopt\skrypt.py
+
+WIRTUALNE ŒRODOWISKA (virtualenvs)
+Wisrtualne œrodowiska zapewniaj¹ izolacjê projektu, i sparwiaj¹,
+¿e jego uruchomienie odbywa siê w takich samych warunkach w jakich
+zosta³ napisany.
+To pliki wykonalne pythona (python.exe)
+
+Jeœli projekt jest w innej wersji Pythona i , lub biblioteki, tworzymy nowe œrodowisko tylko,
+dla tego projektu z w³aœciwym wersj¹ Pythona i biblioteki. W ka¿dej chwili mo¿na zmieniæ wersje.
+
+TYPY i STA£E WBUDOWANE
+Kilka typów to int (liczba ca³kowita)
+float - (liczba zmiennoprzecinkowa, rzeczywista --> u³amek)
+bool - (wartoœc logiczna true false
+str - ³ancuch znaków ("")
+listy ['Ala', '1'   ]
+tuple - (  'Ala', '1'   )
+range - do generowania sekwencji liczb
+range(5), range(1, 20), range(1,20,2) - zróci od 1 do 19 bez 2
+
+W wersji 3.4 Pythona mo¿na uzywac podkreœliników dla liczb
+x = 1_000_000
+
+Mo¿na formatowaæ ³añcuch znaków za pomoc¹ tzw. interpolacji:
+imie = 'Ala'
+zdanie = 'f'{imie} ma kota.'
+print (zdanie) Ala ma kota
+
+print(f'4+4 to{4+4}')
+pojawi siê 8
+
+TYPY MUTOWALNE vs NIEMUTOWALNE
+int, float, bool, str, tuple, range - s¹ niemutowalne
+list - jest mutowalny
+Typy mutowalne mog¹ byæ zmienione w miejscu,
+natomiast niemutowalne zwróc¹ nowy obiekt zawieraj¹cy 
+
+calkowita = 300
+id(calkowita) # 54973
+
+slowa = ['Ala', 'ma', 'kota']
+Tak NIE ROBIMY
+zdanie = '  '
+for slowo in slowa:
+	zdanie +=slowo + '  '
+Tak jest POPRAWNIE
+zdanie = '  '.join(slowa)
+
+
+TRUE == 1
+FALSE == 0
+
+KONWERTOWANIE TYPÓW
+int na float: float(13) 3 13.0
+float na int: int(567.7) #567 (tzw pod³oga)
+
+str(42) # '42'
+
+
+
+funkcja isinstance podaje nam jakiego typu jest zmienna
+x = 14
+y = 0.5
+isinstance(x, int)
+isinstance(y, float)
+isinstance(x, str)
+isinstance(y, bool)
+
+4 do potêgi 0.5 to inaczej pierwiastek z 4.
+
+
+
+

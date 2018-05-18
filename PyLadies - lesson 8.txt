@@ -1,0 +1,203 @@
+s³owiniki
+
+TUPLE
+vowel = ('e', 'a', 'i', 'o', 'u', 'y')
+week_days = ('poniedzialek', 'wtorek', 'sroda', 'czwartek', 'piatek', 'sobota', 'niedziela')
+months = ('styczen', 'luty', 'marzec', 'kwiecien', 'maj', 'czerwiec', 'lipiec', 'sierpien', 'wrzesien', 'pazdziernik', 'listopad', 'grudzien')
+three_musketeers = ('Atos', 'Portos', 'Aramis')
+S£OWNIKI
+friends_home = {
+    'Michal': 'Poznan',
+    'Ola': 'Krakow',
+    'Bartek': 'Berlin',
+    'Tomek': 'Poznan'
+}
+friends = {
+   'michu86': {
+       'name': 'Micha³',
+       'city': 'Poznañ'
+   },
+   'olenka': {
+       'name': 'Ola',
+       'city': 'Kraków'
+   },
+   'frodo92': {
+       'name': 'Bartek',
+       'city': 'Berlin'
+   },
+   'buziaczek': {
+       'name': 'Tomek',
+       'city': 'Poznañ'
+   },
+   'lubie_pierogi': {
+       'name': 'Ola',
+       'city': 'Gdañsk'
+   },
+}
+movies = {
+    2000: {
+        "Gladiator": {
+            'director': 'Ridley Scott',
+            'oscar': True
+        },
+        "Chocolat": {
+            'director': 'Lasse Hallström',
+            'oscar': False
+        },
+        "Crouching Tiger, Hidden Dragon": {
+            'director': 'Ang Lee',
+            'oscar': False
+        },
+        "Erin Brockovich": {
+            'director': 'Steven Soderbergh',
+            'oscar': False
+        },
+        "Traffic": {
+            'director': 'Steven Soderbergh',
+            'oscar': False
+        }
+    },
+    2001: {
+        "A Beautiful Mind": {
+            'director': 'Ron Howard',
+            'oscar': True
+        },
+        "Gosford Park": {
+            'director': 'Robert Altman',
+            'oscar': False
+        },
+        "In the Bedroom": {
+            'director': 'Todd Field',
+            'oscar': False
+        },
+        "The Lord of the Rings: The Fellowship of the Ring": {
+            'director': 'Peter Jackson',
+            'oscar': False
+        },
+        "Moulin Rouge!": {
+            'director': 'Baz Luhrmann',
+            'oscar': False
+        }
+    },
+    2002: {
+        "Chicago": {
+            'director': 'Rob Marshall',
+            'oscar': True
+        },
+        "Gangs of New York": {
+            'director': 'Martin Scorsese',
+            'oscar': False
+        },
+        "The Lord of the Rings: The Two Towers": {
+            'director': 'Peter Jackson',
+            'oscar': False
+        },
+        "The Pianist": {
+            'director': 'Roman Polañski',
+            'oscar': False
+        }
+    },
+    2003: {
+        "The Lord of the Rings: The Return of the King": {
+            'director': 'Peter Jackson',
+            'oscar': True
+        },
+        "Lost in Translation": {
+            'director': 'Sofia Coppola',
+            'oscar': False
+        },
+        "Master and Commander: The Far Side of the World": {
+            'director': 'Peter Weir',
+            'oscar': False
+        },
+        "Mystic River": {
+            'director': 'Clint Eastwood',
+            'oscar': False
+        },
+        "Seabiscuit": {
+            'director': 'Gary Ross',
+            'oscar': False
+        }
+    },
+    2004: {
+        "Million Dollar Baby": {
+            'director': 'Clint Eastwood',
+            'oscar': True
+        },
+        "The Aviator": {
+            'director': 'Martin Scorsese',
+            'oscar': False
+        },
+        "Finding Neverland": {
+            'director': 'Marc Forster',
+            'oscar': False
+        },
+        "Ray": {
+            'director': 'Taylor Hackford',
+            'oscar': False
+        },
+        "Sideways": {
+            'director': 'Alexander Payne',
+            'oscar': False
+        }
+    }
+}
+movie_list = {
+    'Shrek': {
+        'kategoria': ['animacja', 'komedia'],
+        'rok': 2001,
+        're¿yser': ['Vicky Jenson', 'Andrew Adamson']
+    },
+    'Iron Man': {
+        'kategoria': ['akcja', 'sci-fi'],
+        'rok': 2008,
+        're¿yser': 'Jon Favreau'
+    },
+    'Toy Story': {
+        'kategoria': ['animacja', 'komedia'],
+        'rok': 1995,
+        're¿yser': 'John Lasseter'
+    },
+    'Avatar': {
+        'kategoria': 'sci-fi',
+        'rok': 2009,
+        're¿yser': 'James Cameron'
+    },
+    'Król Lew': {
+        'kategoria': 'animacja',
+        'rok': 1994,
+        're¿yser': ['Rob Minkoff', 'Roger Allers']
+    },
+    'Edward No¿ycorêki': {
+        'kategoria': ['fantasy', 'dramat'],
+        'rok': 1990,
+        're¿yser': 'Tim Burton'
+    },
+    'Maska': {
+        'kategoria': ['fantasy', 'komedia'],
+        'rok': 1994,
+        're¿yser': 'Chuck Russell'
+    }
+}
+archiwum = {
+    'E.T.': {
+        'kategoria': ['przygodowy', 'sci-fi'],
+        'rok': 1982,
+        're¿yser': 'Steven Spielberg'
+    },
+    'Ojciec Chrzestny': {
+        'kategoria': ['dramat', 'gangsterski'],
+        'rok': 1972,
+        're¿yser': 'Francis Ford Coppola'
+    },
+    'Gladiator': {
+        'kategoria': ['dramat', 'historyczny'],
+        'rok': 2000,
+        're¿yser': 'Ridley Scott'
+    },
+    'Czarnoksiê¿nik z OZ': {
+        'kategoria': ['fantasy', 'musical', 'przygodowy'],
+        'rok': 1939,
+        're¿yser': ['King Vidor', 'Mervyn LeRoy']
+    }
+}

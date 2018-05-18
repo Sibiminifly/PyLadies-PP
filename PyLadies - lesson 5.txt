@@ -1,0 +1,176 @@
+do notatek --> "ctrl" + "/"
+
+
+Pêtla -  powtarzanie ci¹gów instrukcjii skoñczon¹ iloœæ razy
+np.
+- pytaj o kolejn¹ liczbê zanim nie trafisz na 0
+Pêtle dwie
+for - dla okreœlonego warunku
+liczby = [2,3,5,7]
+for liczba in liczby:
+	print(liczba)
+ka¿dy z elementów tej listy powininien byæ wydrukowany
+
+while - dopuki warunek jest okreœlony bêd¹ wykonywane okreœlone informacje
+dopuki liczba bêdzie mniejsza od piêciu to ta liczba ma byæ drukowana
+licznik = licznik+1
+
+licznik = 0
+while licznik < 5:
+	print(licznik)
+	licznik +=1
+
+- Dla kolejnych znaków w stringu
+for letter in 'Python':
+	print ('Bie¿¹ca litera: ', letter)
+
+- Dla elementów listy
+fruits = ['banan', 'jablko', 'gruszka']
+for fruit in fruits
+	print('owoc: ', fruit)
+
+- Dla zakresu liczb
+for num in range(10,20): #od 10 do 19
+	print (num)
+
+- for num in range(10): #od 1 do 9
+print (num)
+
+
+
+range
+range(kiedy_stop)
+for i in range(5):
+	print(i) # 0, 1, 2, 3, 4
+
+range(start, kiedy_stop)
+for i in range(2,10):
+	print (i) # 2,3,4,5,6,7,8,9
+
+range(start, kiedy_stop, krok)
+for i in range(p, -10, -2):
+	print(i) # 0, -2, -4, -6, -8
+
+Uwaga: liczone s¹ wartoœci do kiedy_stop, ale bez niej, , czyli bez niej, czyli je¿eli 
+kiedy_stop = 5
+---------------------------------------------------------------------------
+Uzupe³nij listê znajomych, zapytaj o imiona 5 nowych znajomych
+moi_znajomi =["Maciek Nowak", "Ania Kowalska", "Marta Janiak", "Paulina Gnifka", "Robert Czernia", "Anna Wasik", Gabriela Nowaczyk", "Mariola Bastek"]
+#Mam poprosiæ o imiona nowych znajomych
+
+moi_znajomi =["Maciek Nowak", 
+              "Ania Kowalska", 
+              "Marta Janiak", 
+              "Paulina Gnifka", 
+              "Robert Czernia", 
+              "Anna Wasik", 
+              "Gabriela Nowaczyk", 
+              "Mariola Bastek"]
+for znajomy in range(5):
+	nazwisko = input("Podaj nazwisko znajomego")
+	moi_znajomi.append(nazwisko)
+print(moi_znajomi)
+
+---------------------------------------------------------------
+
+Zad.1 Wyœwietl wszystkie liczby (3range) parzyste z przedzia³u 0-26
+Hint: liczba parzysta, gdy dzieli siê przez 2 bez reszty
+
+for i in range(0, 27, 2):
+    print(i)
+
+for i in range (27):
+	if (i % 2 == 0)      #i przez 2 bez reszty
+		print(i)
+
+Zad.2 Wypisz ¿yczenia œwi¹teczne dla wszystkich osób na liœcie ("Weso³ych Œwi¹t <imie>>!")
+osoby = ["Monika", "Wojciech", "Jan", "Piotr", "Agata"]
+
+osoby = ["Monika", "Wojciech", "Jan", "Piotr", "Agata"]
+for imie in osoby:
+    print("Weso³ych Œwi¹t ", imie)
+
+
+Zad3. SprwdŸ, który znak w ci¹gu "Ala ma 4 koty" jest liczb¹.
+Hint: znak.isdigit() # true/false
+
+zdanie = "Ala ma 4 koty"
+for znak in zdanie:
+    if znak.isdigit():
+        print (znak)
+
+--------------------------
+Uwaga na pu³apki
+x =1
+white True:
+print
+
+licznik = 0
+while licznik < 50:
+	print (licznik)
+licznik +=1
+
+While trwa tak d³uga puki nie bêdzie spe³niony warunek.
+Dopuki licznik jest <50 ma nam program wyœwietliæ liczbê i licznik powiêkszyæ o 1.
+
+zapytaj o imiona 5 nowych znajomych
+
+moi_znajomi= ["Monika", "Wojciech", "Jan", "Piotr", "Agata"]
+i = 0
+while (i<5):
+    znajomy = input("Podaj znajomego: ")
+    moi_znajomi.append(znajomy)
+    i += 1
+print(moi_znajomi)
+
+---------------------------------------------
+Przelicz œrednie wynagrodzenie za rok 2017
+Program powinien spytaæ o wynagrodzenie z kazdego miesi¹ca, a nestêpnie policzyæ i wydrukowaæ œredni¹.
+srednia = suma / ilosc_miesiecy
+
+Dla chêtnych:
+Napisz zadanie w dwóch wersjach, z wykorzystaniem wersji for i while
+
+suma = 0
+miesiac = 1
+while (miesiac<13):
+    wynagrodzenie = int(input ("Podaj wynagrodzenie: "))  #pod zmienn¹ wynagrodzenie bêdzie liczba przez dodanie int
+    suma += wynagrodzenie
+    miesiac += 1
+#srednia = suma/12
+print("Œrednia wynagrodzenia: ",suma/12)
+
+-------------------------------------------
+Break - pozwala na przerwanie pêtli
+while True
+	liczba = int(input("Podaj liczbê: ")
+	print(liczba)
+	if liczba == 0:
+		break
+
+Continue - przechodzi do nastêpnej iteracji w pêtli:
+for num in range(2,10):    #od 2 do 9
+    if num % 2 == 0:
+        print ("liczba parzysta", num)
+    continue
+print("liczba nieparzysta", num)
+
+--------------------------------------
+zad.1
+Œwiety Miko³aj otrzymuje bud¿et na prezenty œwi¹teczne i d³ug¹ listê zamówieñ.
+Napisz program, który zapyta o bud¿et brutto, odliczy 19%
+podatku dochodowego i 1172.56 z³ na ZUS, a nastêpnie pozwoli zliczyæ wszystkie wydatki
+i sprawdziæ, czy zmieszcz¹ siê w bud¿ecie.
+Wyœwietl podsumowanie podatkw, sk³adek ZUS i wydatków na prezenty.
+
+bud¿et brutto
+pytamy co tam podstawiæ
+zmienna -19%*zmienna
+
+je¿eli ta kwota która mamy wydac na prezenty jest <= w bud¿ecie i wyœwietliæ podsumowanie
+je¿eli nie mieœcimy siê wyœwietliæ informacjê
+
+
+
+
+
